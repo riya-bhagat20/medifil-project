@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: rgb(3, 144, 144);
+}
+
+/* ---------container part------------- */
+.container{
+    width: 100%;
+    height: 100vh;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     font-family: sans-serif ;
+     color: rgb(122, 120, 120); 
+     font-size: 1.2rem; 
+}
+
+/* -----------image part -----------  */
+.img-section{
+    width:400px;
+    height: 60vh;
+    text-align:center;
+    >p{
+        color: rgb(3, 144, 144);
+        padding: 20px 20px;
+        text-align:center;
+        font-size: 1rem;
+    }
+    img{
+        background-image: none;
+    }
+}
+
+/* <!-- ----------- sign in - part ----------- --> */
+.log-in-page{
+    width:400px;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    border: 2px gainsboro solid;
+    border-radius: 5px;
+  .cantent{
+    text-align:left;
+     h1{
+       padding-left:4rem;
+       padding-bottom:15px;
+       color: rgb(3, 144, 144);
+     }
+  }
+ .btn{
+    background-color: rgb(3, 144, 144);
+    padding:5px 82px ;
+    margin: 10px 0px;
+    font-size: 16px;
+    border-radius:3px;
+    border: none;
+    border-color:rgb(2, 77, 77) ;
+    a{
+        color: white;
+    }
+    cursor: pointer;
+ }  
+ input{
+    border: 2px gainsboro solid;
+    padding-right:50px ;
+    padding-top: 5px;
+    padding-bottom:5px;
+ }   
+}
+
+/* --------------hover effect ----------- */
+input:hover{
+    border-bottom:rgb(188, 187, 187) ;
+    background-color:gainsboro;
+}
+.btn:hover{
+    border-bottom:rgb(188, 187, 187) ;
+    background-color:gainsboro;
+   a{
+    color: rgb(3, 144, 144) ;
+   }
+}
+     @media screen and (max-width: 500px) {
+        .container  {
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+           }
+         }
